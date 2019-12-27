@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+html,
+body,
+#root,
+div.main-container {
+  background: $main-bacground;
+  font-family: $main-font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text;
+  &__content {
+    height: 100%;
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    align-items: center;
+    color: $text;
+    font-family: $main-font-family;
+    padding-bottom: 30px;
+  }
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100%;
+}
