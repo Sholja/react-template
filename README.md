@@ -81,3 +81,6 @@
 
 * Trigger tests
   `yarn test`
+
+* Start generator for generating feature boilerplate
+  `yarn generate`
