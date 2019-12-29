@@ -26,7 +26,8 @@
     "start-prod": "PORT=3333 REACT_APP_ENV=production react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate": "node generator.js"
   },
   "eslintConfig": {
     "extends": "react-app"

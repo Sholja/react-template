@@ -1,10 +1,10 @@
-import DashboardContainer from '../app/dashboard/components/dashboard-container';
+import Dashboard from '../app/dashboard/components/dashboard';
 
 // possible routes inside the app
 const routes = {
   home: {
     path: ['/'],
-    component: DashboardContainer,
+    component: Dashboard,
   },
 };
 
