@@ -84,3 +84,6 @@
 
 * Start generator for generating feature boilerplate
   `yarn generate`
+
+* Start storybook
+  `yarn storybook`
