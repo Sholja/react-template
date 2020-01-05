@@ -57,8 +57,8 @@
     * 📑 helpers.js
 * 📒 components
     * 📒 button
-    📑 button.js
-    📑 button.scss
+      📑 button.js
+      📑 button.scss
 * 📒 core
     * 📑 axios-config.js
     * 📑 root-reducer.js
@@ -87,3 +87,11 @@
 
 * Start storybook
   `yarn storybook`
+
+## Authors and contributors
+
+* **Eldin Soljic** - [Sholja](https://github.com/Sholja) - **Software Developer**
+
+See also the list of [contributors](https://github.com/SwipeStoxGmbH/naga-card/graphs/contributors) who participated in this project.
+
+# Happy coding!
