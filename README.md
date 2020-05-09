@@ -92,6 +92,6 @@
 
 * **Eldin Soljic** - [Sholja](https://github.com/Sholja) - **Software Developer**
 
-See also the list of [contributors](https://github.com/SwipeStoxGmbH/naga-card/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/Sholja/react-template/graphs/contributors) who participated in this project.
 
 # Happy coding!
