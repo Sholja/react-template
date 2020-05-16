@@ -8,7 +8,7 @@ const Routes = () => {
   const renderRoutes = routes => {
     if (routes && routes.length > 0) {
       return routes.map((route, index) => {
-        return <Route path={route.path} component={route.component} key={index} />;
+        return <Route exact path={route.path} component={route.component} key={index} />;
       });
     } else return null;
   };

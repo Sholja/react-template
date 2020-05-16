@@ -4,10 +4,10 @@ import { persistCombineReducers } from 'redux-persist';
 import createEncryptor from 'redux-persist-transform-encrypt';
 import storage from 'redux-persist/lib/storage';
 
-import { PERSISTOR_SECRET_KEY } from '../common/constants';
+import constants from '../common/constants';
 
 const encryptor = createEncryptor({
-  secretKey: PERSISTOR_SECRET_KEY
+  secretKey: constants.PERSISTOR_SECRET_KEY,
 });
 
 const config = {
@@ -17,12 +17,12 @@ const config = {
   // these will not be persisted
   blacklist: [],
   storage,
-  transforms: [encryptor]
+  transforms: [encryptor],
 };
 
 const rootReducer = persistCombineReducers(config, {
   i18nState,
-  form: formReducer
+  form: formReducer,
 });
 
 export default rootReducer;

@@ -1,11 +1,9 @@
-import Helpers from '../../common/helpers';
+import { formAxiosObject } from '../../common/helpers';
 import { LOGIN } from '../request-objects/users-requests';
 
 const UsersApi = () => {
-  const helpers = Helpers();
-
   const login = (email, password) => {
-    return helpers.formAxiosObject(LOGIN, {
+    return formAxiosObject(LOGIN, {
       email,
       password,
     });

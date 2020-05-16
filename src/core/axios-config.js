@@ -1,44 +1,34 @@
 import axios from 'axios';
 import promise from 'promise';
 
-import Helpers from '../common/helpers';
-import { API_URL } from '../common/constants';
+import { blockPageScroll, unblockPageScroll } from '../common/helpers';
+import constants from '../common/constants';
 
 const initilizeHttpClient = () => {
   const instance = axios.create();
   instance.defaults.headers.common = {};
-  axios.defaults.baseURL = API_URL;
-
-  const helpers = Helpers();
-
-  const blockPageScroll = () => {
-    helpers.blockPageScroll();
-  };
-
-  const unblockPageScroll = () => {
-    helpers.unblockPageScroll();
-  };
+  axios.defaults.baseURL = constants.API_URL;
 
   axios.interceptors.request.use(
-    config => {
+    (config) => {
       blockPageScroll();
 
       // here you can handle sending session tokens in headers
 
       return config;
     },
-    error => {
+    (error) => {
       unblockPageScroll();
       return promise.reject(error);
     },
   );
 
   axios.interceptors.response.use(
-    response => {
+    (response) => {
       unblockPageScroll();
       return response;
     },
-    error => {
+    (error) => {
       unblockPageScroll();
 
       return Promise.reject(error);
