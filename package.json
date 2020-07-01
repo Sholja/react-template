@@ -14,7 +14,7 @@
     "react-scripts": "^3.4.1",
     "redux": "^4.0.4",
     "redux-devtools-extension": "^2.13.8",
-    "redux-form": "^8.2.6",
+    "redux-form": "^8.3.6",
     "redux-i18n": "^1.5.19",
     "redux-persist": "^6.0.0",
     "redux-persist-transform-encrypt": "^2.0.1",
