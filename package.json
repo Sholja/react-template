@@ -15,7 +15,7 @@
     "redux": "^4.0.4",
     "redux-devtools-extension": "^2.13.8",
     "redux-form": "^8.3.6",
-    "redux-i18n": "^1.5.19",
+    "redux-i18n": "^1.5.20",
     "redux-persist": "^6.0.0",
     "redux-persist-transform-encrypt": "^2.0.1",
     "redux-thunk": "^2.3.0"
