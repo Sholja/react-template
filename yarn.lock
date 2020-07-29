@@ -11462,10 +11462,10 @@ redux-form@^8.3.6:
     prop-types "^15.6.1"
     react-is "^16.4.2"
 
-redux-i18n@^1.5.19:
-  version "1.5.19"
-  resolved "https://registry.yarnpkg.com/redux-i18n/-/redux-i18n-1.5.19.tgz#6f8848ec8317abf24ba6e341d57bb16a3d091afd"
-  integrity sha512-gwS9sK02at2D8TZG9LB3YaAYAd9UaYYp7AbXzRN2tRexgCksJE26/u0CgKzq7m2V3JijOZjpPZ749zPq5Coipg==
+redux-i18n@^1.5.21:
+  version "1.5.21"
+  resolved "https://registry.yarnpkg.com/redux-i18n/-/redux-i18n-1.5.21.tgz#dd5591ca58171e7a715bd411a7679eaa51a82098"
+  integrity sha512-D77iTtxcN+SQXTcKogHeHuVd5xLdlBo/fWNqLVox9a0ov9JD6cdzV4CWNkT/BnKm/ypYovO6kUBBd11N+4kXFg==
   dependencies:
     colors "^1.1.2"
     escape-quotes "^1.0.2"
