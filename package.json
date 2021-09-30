@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "axios": "^0.21.2",
-    "lodash": "^4.17.15",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
@@ -25,6 +24,7 @@
     "start-local": "PORT=3333 REACT_APP_ENV=local react-scripts start",
     "start-prod": "PORT=3333 REACT_APP_ENV=production react-scripts start",
     "build": "react-scripts build",
+    "build-prod": "REACT_APP_ENV=production GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 1111 -c .storybook",

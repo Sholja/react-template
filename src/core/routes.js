@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import _ from 'lodash';
 
 import routesConstants from '../common/routes-constants';
 
@@ -15,7 +14,7 @@ const Routes = () => {
 
   return (
     <React.Fragment>
-      <Switch>{renderRoutes(_.values(routesConstants.routes))}</Switch>
+      <Switch>{renderRoutes(Object.keys(routesConstants.routes).map((key) => routesConstants.routes[key]))}</Switch>
     </React.Fragment>
   );
 };
