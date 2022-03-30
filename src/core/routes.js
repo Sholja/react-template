@@ -1,22 +1,26 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import routesConstants from '../common/routes-constants';
+import { routesConstants, _ } from '../common';
 
-const Routes = () => {
-  const renderRoutes = routes => {
+const AppRoutes = () => {
+  const renderRoutes = (routes) => {
     if (routes && routes.length > 0) {
-      return routes.map((route, index) => {
-        return <Route exact path={route.path} component={route.component} key={index} />;
+      return routes.map((route) => {
+        const Component = route.component;
+
+        return <Route path={route.path} element={<Component {...route} />} key={route.prefix} />;
       });
-    } else return null;
+    }
+
+    return null;
   };
 
   return (
-    <React.Fragment>
-      <Switch>{renderRoutes(Object.keys(routesConstants.routes).map((key) => routesConstants.routes[key]))}</Switch>
-    </React.Fragment>
+    <BrowserRouter>
+      <Routes>{renderRoutes(_.values(routesConstants.routes))}</Routes>
+    </BrowserRouter>
   );
 };
 
-export default Routes;
+export default AppRoutes;

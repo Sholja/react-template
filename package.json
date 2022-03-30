@@ -3,21 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.21.2",
-    "node-sass": "^4.13.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-redux": "^7.1.3",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.1",
-    "redux": "^4.0.4",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/runtime": "^7.17.8",
+    "axios": "^0.26.1",
+    "node-sass": "^7.0.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "^5.0.0",
+    "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.8",
-    "redux-form": "^8.3.6",
-    "redux-i18n": "^1.5.19",
+    "redux-form": "^8.3.8",
+    "redux-i18n": "^1.5.24",
     "redux-persist": "^6.0.0",
-    "redux-persist-transform-encrypt": "^2.0.1",
-    "redux-thunk": "^2.3.0"
+    "redux-persist-transform-encrypt": "^3.0.1",
+    "redux-thunk": "^2.4.1"
+  },
+  "resolutions": {
+    "@babel/runtime": ">=7.16.7"
   },
   "scripts": {
     "start": "PORT=3333 REACT_APP_ENV=development react-scripts start",
@@ -26,6 +31,8 @@
     "build": "react-scripts build",
     "build-prod": "REACT_APP_ENV=production GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
+    "test-integration": "cypress open",
+    "test-integration-run": "cypress run",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 1111 -c .storybook",
     "generate": "node generator.js"
@@ -46,13 +53,20 @@
     ]
   },
   "devDependencies": {
-    "@sambego/storybook-state": "^1.3.6",
+    "@sambego/storybook-state": "^2.0.1",
     "@storybook/addon-knobs": "^5.2.8",
-    "@storybook/addon-notes": "^5.2.8",
-    "@storybook/addon-viewport": "^5.3.19",
-    "@storybook/react": "^5.3.19",
-    "@storybook/theming": "^5.3.18",
-    "@testing-library/jest-dom": "^5.7.0",
-    "@testing-library/react": "^10.0.4"
+    "@storybook/addon-notes": "^5.3.21",
+    "@storybook/addon-viewport": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/theming": "^6.4.19",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
   }
 }

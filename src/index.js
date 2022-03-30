@@ -1,7 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
 import I18n from 'redux-i18n';
+import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
@@ -14,15 +13,16 @@ initilizeHttpClient();
 
 export const { persistor, store } = configureStore();
 
-ReactDOM.render(
+const AppWrapper = () => (
   <PersistGate loading={null} persistor={persistor}>
     <Provider store={store}>
       <I18n translations={translations}>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
+        <App />
       </I18n>
     </Provider>
-  </PersistGate>,
-  document.getElementById('root'),
+  </PersistGate>
 );
+
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<AppWrapper />);

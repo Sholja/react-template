@@ -82,11 +82,19 @@
 * Trigger tests
   `yarn test`
 
+* Trigger cypress tests
+  `yarn test-integration`
+
+* Trigger cypress tests (silent mode)
+  `yarn test-integration-run`
+
 * Start generator for generating feature boilerplate
   `yarn generate`
 
 * Start storybook
   `yarn storybook`
+
+#### Testing: [Cypress](https://www.cypress.io/) is configured for testing purposes. Also, [react-testing-library](https://testing-library.com/docs/react-testing-library/intro/) is added in the list of the dev dependencies for unit testing.
 
 ## Authors and contributors
 
