@@ -1,20 +1,27 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "sourceType": "module",
     "allowImportExportEverywhere": false,
-    "codeFrame": false
+    "codeFrame": false,
+    "ecmaVersion": 8,
+    "requireConfigFile": false
   },
-  "extends": ["airbnb", "prettier"],
+  "extends": ["airbnb", "prettier", "eslint:recommended", "plugin:import/errors", "plugin:react/recommended", "plugin:jsx-a11y/recommended"],
   "env": {
     "browser": true,
     "jest": true
   },
   "rules": {
-    "max-len": ["error", { "code": 100 }],
+    "max-len": ["error", { "code": 150 }],
     "prefer-promise-reject-errors": ["off"],
     "react/jsx-filename-extension": ["off"],
     "react/prop-types": ["warn"],
-    "no-return-assign": ["off"]
-  }
+    "no-return-assign": ["off"],
+    "react/function-component-definition": ["off"],
+    "react/jsx-props-no-spreading": ["off"],
+    "default-param-last": ["off"],
+    "import/no-extraneous-dependencies": ["off"]
+  },
+  "plugins": ["react", "import", "jsx-a11y"]
 }

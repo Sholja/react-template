@@ -2,7 +2,7 @@ import axios from 'axios';
 import promise from 'promise';
 
 import { blockPageScroll, unblockPageScroll } from '../common/helpers';
-import constants from '../common/constants';
+import { constants } from '../common';
 
 const initilizeHttpClient = () => {
   const instance = axios.create();

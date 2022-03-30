@@ -1,12 +1,12 @@
 import { reducer as formReducer } from 'redux-form';
 import { i18nState } from 'redux-i18n';
 import { persistCombineReducers } from 'redux-persist';
-import createEncryptor from 'redux-persist-transform-encrypt';
+import { encryptTransform } from 'redux-persist-transform-encrypt';
 import storage from 'redux-persist/lib/storage';
 
-import constants from '../common/constants';
+import { constants } from '../common';
 
-const encryptor = createEncryptor({
+const encryptor = encryptTransform({
   secretKey: constants.PERSISTOR_SECRET_KEY,
 });
 
