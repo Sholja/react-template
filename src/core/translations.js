@@ -1,5 +1,7 @@
 import en from '../languages/en.json';
 
-export const translations = {
+const translations = {
   en,
 };
+
+export default translations;

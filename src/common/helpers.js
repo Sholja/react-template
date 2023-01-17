@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { _ } from './index';
 
 export const blockPageScroll = () => {
   if (document.body.className.indexOf('loader-block-scroll') === -1) {
@@ -12,21 +13,23 @@ export const unblockPageScroll = () => {
 
 export const formAxiosObject = (requestObject, data, params, urlParams, headers) => {
   if (!requestObject || !requestObject.route || !requestObject.method) {
-    return;
+    return () => {};
   }
 
-  let { route, method } = requestObject;
+  let { route } = requestObject;
 
-  if (urlParams) {
-    for (let key in urlParams) {
+  if (urlParams && !_.isObjectEmpty(urlParams)) {
+    Object.keys(urlParams).forEach(key => {
       route += `/${urlParams[key]}`;
-    }
+    });
   }
 
   const axiosObject = {
     url: route,
     method: requestObject.method,
   };
+
+  const { method } = axiosObject;
 
   if (data && (method === 'POST' || method === 'PUT' || method === 'DELETE')) {
     axiosObject.data = data;
