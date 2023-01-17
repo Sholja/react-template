@@ -5,9 +5,12 @@
     "allowImportExportEverywhere": false,
     "codeFrame": false,
     "ecmaVersion": 8,
-    "requireConfigFile": false
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
   },
-  "extends": ["airbnb", "prettier", "eslint:recommended", "plugin:import/errors", "plugin:react/recommended", "plugin:jsx-a11y/recommended"],
+  "extends": ["airbnb", "prettier", "eslint:recommended", "plugin:import/errors", "plugin:react/recommended", "plugin:jsx-a11y/recommended", "plugin:cypress/recommended"],
   "env": {
     "browser": true,
     "jest": true

@@ -1,19 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
-import RenderIf from './render-if';
+import RenderIf from '../index';
 
 const dataTestId = 'render-if';
 
 afterEach(cleanup);
-
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<RenderIf show={true} />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
 
 it('renders null if show prop is false', () => {
   const untouchedComponent = (
@@ -29,7 +22,7 @@ it('renders null if show prop is false', () => {
 
 it('renders component if show prop is true', () => {
   const untouchedComponent = (
-    <RenderIf show={true}>
+    <RenderIf show>
       <p data-testid={dataTestId}>Render something in component</p>
     </RenderIf>
   );

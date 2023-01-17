@@ -15,7 +15,7 @@
     "editor.formatOnSave": true,
     "editor.wordwrap": "on",
     "editor.renderWhitespace": "all",
-    "editor.acceptSuggestionOnEnter": false,
+    "editor.acceptSuggestionOnEnter": "off",
     "eslint.run": "onSave",
     "eslint.autoFixOnSave": true,
   }
