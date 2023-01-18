@@ -24,7 +24,8 @@
     "react/function-component-definition": ["off"],
     "react/jsx-props-no-spreading": ["off"],
     "default-param-last": ["off"],
-    "import/no-extraneous-dependencies": ["off"]
+    "import/no-extraneous-dependencies": ["off"],
+    "import/prefer-default-export": ["off"]
   },
   "plugins": ["react", "import", "jsx-a11y"]
 }
