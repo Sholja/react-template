@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import { routesConstants, _ } from '../common';
+import routesConstants from 'common/routes-constants';
+import _ from 'common/lodash';
 
 const AppRoutes = () => {
   const renderRoutes = (routes) => {

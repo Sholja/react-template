@@ -1,4 +1,4 @@
-import en from '../languages/en.json';
+import en from 'languages/en.json';
 
 const translations = {
   en,

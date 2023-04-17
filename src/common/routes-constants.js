@@ -1,8 +1,8 @@
-import Dashboard from '../app/dashboard/components/dashboard';
+import Dashboard from 'app/dashboard/components/dashboard';
 
 const prefixes = {
-  dashboard: 'DASHBOARD'
-}
+  dashboard: 'DASHBOARD',
+};
 
 // possible routes inside the app
 const routes = {

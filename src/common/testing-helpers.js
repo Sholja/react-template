@@ -8,7 +8,7 @@ import I18n, { i18nState } from 'redux-i18n';
 import storage from 'redux-persist/lib/storage';
 import { MemoryRouter } from 'react-router-dom';
 
-import translations from '../core/translations';
+import translations from 'core/translations';
 
 const encryptor = encryptTransform({
   secretKey: 'secret-key',

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { _ } from './index';
+import _ from 'common/lodash';
 
 export const blockPageScroll = () => {
   if (document.body.className.indexOf('loader-block-scroll') === -1) {
@@ -19,7 +19,7 @@ export const formAxiosObject = (requestObject, data, params, urlParams, headers)
   let { route } = requestObject;
 
   if (urlParams && !_.isObjectEmpty(urlParams)) {
-    Object.keys(urlParams).forEach(key => {
+    Object.keys(urlParams).forEach((key) => {
       route += `/${urlParams[key]}`;
     });
   }

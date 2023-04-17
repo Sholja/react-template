@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Translator from '../index';
+import Translator from 'components/translator';
 
 export default {
   title: 'Translator',

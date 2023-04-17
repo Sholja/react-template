@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import translations from '../../core/translations';
+import translations from 'core/translations';
 
 const Translator = ({ text, translationObject = {} }, { t }) => {
   if (translations.en[text]) {
