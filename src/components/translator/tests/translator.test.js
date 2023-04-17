@@ -1,8 +1,8 @@
 import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
-import Translator from '../index';
-import { wrapComponent } from '../../../common/index';
+import Translator from 'components/translator';
+import { wrapComponent } from 'common/testing-helpers';
 
 const correctTranslation = 'COMMON.YES';
 const wrongTranslation = 'THIS.KEY.NON.EXISTING';

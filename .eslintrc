@@ -16,7 +16,7 @@
     "jest": true
   },
   "rules": {
-    "max-len": ["error", { "code": 150 }],
+    "max-len": ["error", { "code": 200 }],
     "prefer-promise-reject-errors": ["off"],
     "react/jsx-filename-extension": ["off"],
     "react/prop-types": ["warn"],
@@ -25,7 +25,8 @@
     "react/jsx-props-no-spreading": ["off"],
     "default-param-last": ["off"],
     "import/no-extraneous-dependencies": ["off"],
-    "import/prefer-default-export": ["off"]
+    "import/prefer-default-export": ["off"],
+    "import/no-unresolved": ["off"]
   },
   "plugins": ["react", "import", "jsx-a11y"]
 }

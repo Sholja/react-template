@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Routes from './core/routes';
+import Routes from 'core/routes';
 
 import './common/styles/app.scss';
 

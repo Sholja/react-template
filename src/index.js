@@ -4,10 +4,10 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
-import configureStore from './core/store';
-import App from './App';
-import initilizeHttpClient from './core/axios-config';
-import translations from './core/translations';
+import configureStore from 'core/store';
+import App from 'App';
+import initilizeHttpClient from 'core/axios-config';
+import translations from 'core/translations';
 
 initilizeHttpClient();
 

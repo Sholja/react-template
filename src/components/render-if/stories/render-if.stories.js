@@ -1,6 +1,6 @@
 import React from 'react';
 
-import RenderIf from '../index';
+import RenderIf from 'components/render-if';
 
 export default {
   title: 'Render If',

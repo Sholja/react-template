@@ -23,12 +23,12 @@
     "sass-loader": "10.1.1"
   },
   "scripts": {
-    "start": "PORT=3333 REACT_APP_ENV=development react-scripts start",
-    "start-local": "PORT=3333 REACT_APP_ENV=local react-scripts start",
-    "start-prod": "PORT=3333 REACT_APP_ENV=production react-scripts start",
-    "build": "react-scripts build",
-    "build-prod": "REACT_APP_ENV=production GENERATE_SOURCEMAP=false react-scripts build",
-    "test": "react-scripts test",
+    "start": "PORT=3333 REACT_APP_ENV=development react-app-rewired start",
+    "start-local": "PORT=3333 REACT_APP_ENV=local react-app-rewired start",
+    "start-prod": "PORT=3333 REACT_APP_ENV=production react-app-rewired start",
+    "build": "react-app-rewired build",
+    "build-prod": "REACT_APP_ENV=production GENERATE_SOURCEMAP=false react-app-rewired build",
+    "test": "react-app-rewired test",
     "test-integration": "cypress open",
     "test-integration-run": "cypress run",
     "eject": "react-scripts eject",
@@ -60,6 +60,8 @@
     "@storybook/theming": "^6.5.15",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "customize-cra": "^1.0.0",
     "cypress": "^12.3.0",
     "cypress-file-upload": "^5.0.8",
     "eslint": "^8.31.0",
@@ -69,6 +71,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.7.0",
     "eslint-plugin-react": "^7.32.0",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "react-app-rewired": "^2.2.1"
   }
 }
